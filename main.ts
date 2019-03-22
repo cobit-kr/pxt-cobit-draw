@@ -6,6 +6,7 @@ namespace cobit_draw {
 
     /**
      * Go forward
+     *  * @param distance distance of motor
      */
     //% distance.min=0 distance.max=100
     //% weight=90
