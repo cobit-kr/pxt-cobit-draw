@@ -112,10 +112,10 @@ namespace cobit_draw {
 
     }
 
-     /**
-     * Turn left 
-     *  * @param angle angle of motor
-     */
+    /**
+    * Turn left 
+    *  * @param angle angle of motor
+    */
     //% angle.min=0 angle.max=90
     //% weight=90
     //% blockId="cobit_turnLeft" block="왼쪽으로 %angle|% 도만큼 돌기"
@@ -167,10 +167,10 @@ namespace cobit_draw {
     }
 
 
-     /**
-     * Turn right 
-     *  * @param angle angle of motor
-     */
+    /**
+    * Turn right 
+    *  * @param angle angle of motor
+    */
     //% angle.min=0 angle.max=90
     //% weight=90
     //% blockId="cobit_turnRight" block="오른쪽으로 %angle|% 도만큼 돌기"
@@ -253,4 +253,5 @@ namespace cobit_draw {
         value = pins.pulseIn(DigitalPin.P3, PulseValue.High) / 58
         return value
     }
+    
 }
