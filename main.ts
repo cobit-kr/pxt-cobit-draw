@@ -8,7 +8,7 @@ namespace cobit_draw {
      * Go forward
      *  * @param distance distance of motor
      */
-    //% distance.min=0 distance.max=100
+    //% distance.min=0 distance.max=500
     //% weight=90
     //% blockId="cobit_goStepForward" block="앞으로 %distance|% 거리만큼 가기"
     export function goStepForward(distance: number): void {
@@ -62,7 +62,7 @@ namespace cobit_draw {
      * Go backward
      *  * @param distance distance of motor
      */
-    //% distance.min=0 distance.max=100
+    //% distance.min=0 distance.max=500
     //% weight=90
     //% blockId="cobit_goStepBackward" block="뒤로 %distance|% 거리만큼 가기"
     export function goStepBackward(distance: number): void {
