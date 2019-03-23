@@ -228,7 +228,7 @@ namespace cobit_draw {
     //% weight=90
     //% degree.min=0 degree.max=180
     //% blockId="cobit_rotateServo" block="서보모터 %degree|도 회전하기"
-    export function rotateServo(degree: number): void {
+    export function goRotateServo(degree: number): void {
         if (degree > 180) {
             degree = 180
         }
