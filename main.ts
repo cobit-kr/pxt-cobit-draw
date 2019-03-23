@@ -217,6 +217,5 @@ namespace cobit_draw {
             pins.digitalWritePin(DigitalPin.P6, 0)
             basic.pause(1)
         }
-
     }
 }
