@@ -220,4 +220,21 @@ namespace cobit_draw {
         }
 
     }
+
+    /**
+	 * Moves the servo.
+     * @param degree servo rotation degree 
+	 */
+    //% weight=90
+    //% degree.min=0 degree.max=180
+    //% blockId="cobit_rotateServo" block="서보모터 %degree|도 회전하기"
+    export function rotateServo(degree: number): void {
+        if (degree > 180) {
+            degree = 180
+        }
+        if (degree < 0) {
+            degree = 0
+        }
+        pins.servoWritePin(AnalogPin.P1, degree)
+    }
 }
