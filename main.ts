@@ -237,4 +237,20 @@ namespace cobit_draw {
         }
         pins.servoWritePin(AnalogPin.P1, degree)
     }
+
+    /**
+	 *  Read ultrasonic sensor 
+	 */
+    //% weight=90
+    //% blockId="cobit_readUltraSonic" block="초음파센서 읽기"
+    export function goReadUltraSonic(): number {
+        let value = 0
+        pins.digitalWritePin(DigitalPin.P2, 0)
+        basic.pause(2)
+        pins.digitalWritePin(DigitalPin.P2, 1)
+        basic.pause(10)
+        pins.digitalWritePin(DigitalPin.P2, 0)
+        value = pins.pulseIn(DigitalPin.P3, PulseValue.High) / 58
+        return value
+    }
 }
