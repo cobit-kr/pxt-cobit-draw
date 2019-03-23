@@ -253,5 +253,4 @@ namespace cobit_draw {
         value = pins.pulseIn(DigitalPin.P3, PulseValue.High) / 58
         return value
     }
-    
 }
