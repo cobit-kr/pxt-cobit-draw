@@ -237,7 +237,6 @@ namespace cobit_draw {
         }
         pins.servoWritePin(AnalogPin.P1, degree)
     }
-
     /**
 	 *  Read ultrasonic sensor   
 	 */
@@ -253,5 +252,4 @@ namespace cobit_draw {
         value = pins.pulseIn(DigitalPin.P3, PulseValue.High) / 58
         return value
     }
-
 }
